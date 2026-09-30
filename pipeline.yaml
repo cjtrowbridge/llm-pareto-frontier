@@ -3,7 +3,7 @@ pipeline_id: llm-pareto-frontier
 
 contract:
   goal: Measure inference cost per million generated tokens against model capability and maintain the repo's taxonomy JSON rollups and Pareto frontier visualization.
-  allowed_changes: [taxonomy/**/model.json, taxonomy/**/lab.json, taxonomy/taxonomy.json, taxonomy/**/whitepaper.md, artifacts/pareto-frontier.html, artifacts/capability-cost.svg, artifacts/capability-cost.html]
+  allowed_changes: [taxonomy/**/model.json, taxonomy/**/lab.json, taxonomy/taxonomy.json, taxonomy/**/whitepaper.md, taxonomy/**/index.md, artifacts/pareto-frontier.html, artifacts/capability-cost.svg, artifacts/capability-cost.html]
   protected_invariants: [models.csv, taxonomy/**/livebench.csv, taxonomy/**/whitepaper.*, source urls in per-model citations]
 
 source:

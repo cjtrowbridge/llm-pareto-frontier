@@ -159,7 +159,12 @@ Stages (in order):
    `livebench`), derived from the model's own per-column entries — the
    table stores no published overall column; derivation: derive_composite().
 
-7. PARETO FRONTIER + RENDER  (mutates: artifacts/pareto-frontier.html)
+7. TAXONOMY MARKDOWN INDEXES  (mutates: taxonomy/**/index.md)
+   Build navigation and source tables from the resolved CSV rows and canonical
+   JSON documents: root -> labs, lab -> models, model -> benchmark/rate
+   citations. These are generated documentation only, never pipeline inputs.
+
+8. PARETO FRONTIER + RENDER  (mutates: artifacts/pareto-frontier.html)
    A point is on the frontier iff no other point has cost <= AND capability >=
    with at least one strict; exact (cost, capability) ties keep both members,
    flagged. Render one self-contained HTML page (inline CSS + inline SVG, no
@@ -167,7 +172,7 @@ Stages (in order):
    byte-identical page) with the point plot, a per-model cost/rate/citation/
    status table, and the full benchmark-value table. Byte-compare/promote.
 
-8. CAPABILITY-COST CHARTS  (deterministic; mutates: artifacts/capability-cost.svg,
+9. CAPABILITY-COST CHARTS  (deterministic; mutates: artifacts/capability-cost.svg,
    artifacts/capability-cost.html)
    One standalone scatter SVG (no timestamp — a pure function of the data,
    so unchanged data yields byte-identical bytes): one point per model with
@@ -185,7 +190,7 @@ Stages (in order):
    The HTML wrapper offers the default budget step curve, a straight-segment
    Pareto frontier, and points only. Byte-compare/promote.
 
-9. REPORT  (the checkpoint; runs again best-effort on failure/interruption)
+10. REPORT  (the checkpoint; runs again best-effort on failure/interruption)
    `reports/<run_id>/run.json` + `narrative.md`; final visible summary with
    frontier members, skipped models, and warnings.
 """
@@ -231,6 +236,7 @@ MATERIAL_STAGES = (
     "rollup",
     "cost",
     "capability",
+    "taxonomy_index",
     "frontier_render",
     "capability_cost_chart",
     "report",
@@ -719,6 +725,7 @@ def stage_discover(run: Run) -> str:
                     "model": model,
                     "budget": budget,
                     "livebench_id": (raw.get("livebench_id") or "").strip(),
+                    "whitepaper": (raw.get("whitepaper") or "").strip(),
                     "livebench_source": (raw.get("livebench_source") or "").strip(),
                 }
             )
@@ -880,6 +887,8 @@ def stage_discover(run: Run) -> str:
                 "budget": row["budget"],
                 "lab_folder": row["lab_folder"],
                 "model_folder": row["model_folder"],
+                "whitepaper": row["whitepaper"],
+                "livebench_source": row["livebench_source"],
                 "citation": row["livebench_source"],
                 "benchmark_names": benchmark_names,
                 "composite": {"name": composite_name, "value": composite_value},
@@ -1310,7 +1319,128 @@ def stage_capability(run: Run) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Stage 7: pareto frontier + render (deterministic, timestamp-free)
+# Stage 7: taxonomy Markdown indexes (deterministic, timestamp-free)
+# ---------------------------------------------------------------------------
+def _md_cell(value: object) -> str:
+    """Escape a value used in a generated Markdown table cell."""
+    return str(value).replace("|", r"\|").replace("\n", " ")
+
+
+def _md_link(label: str, target: str) -> str:
+    return f"[{_md_cell(label)}](<{target}>)" if target else "â€”"
+
+
+def _md_links(urls: object, label: str = "source") -> str:
+    links = urls if isinstance(urls, list) else []
+    return " · ".join(_md_link(f"{label} {i}", str(url)) for i, url in enumerate(links, 1)) or "â€”"
+
+
+def _markdown_bytes(lines: list[str]) -> bytes:
+    return ("\n".join(lines).rstrip() + "\n").encode("utf-8")
+
+
+def stage_taxonomy_index(run: Run) -> str:
+    """Write browsable source indexes without introducing a new data source."""
+    tax = run.repo_root / "taxonomy"
+    docs: dict[tuple[str, str], dict] = {}
+    for rec in run.models:
+        path = tax / rec["lab_folder"] / rec["model_folder"] / "model.json"
+        try:
+            doc = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, UnicodeDecodeError, json.JSONDecodeError) as exc:
+            raise PipelineError([f"taxonomy index cannot read {rel(run.repo_root, path)}: {exc}"], "taxonomy_index") from exc
+        docs[(rec["lab_folder"], rec["model_folder"])] = doc
+
+    changed = 0
+    labs: dict[str, list[dict]] = {}
+    for rec in run.models:
+        labs.setdefault(rec["lab_folder"], []).append(rec)
+
+    root_lines = [
+        "# LLM taxonomy",
+        "",
+        "Generated from the canonical model records. Each lab and model page links to its cited sources.",
+        "",
+        "| Lab | Models | Catalog |",
+        "| --- | ---: | --- |",
+    ]
+    for folder, records in labs.items():
+        root_lines.append(
+            f"| {_md_link(records[0]['lab'], f'{folder}/index.md')} | {len(records)} | "
+            f"{_md_link('lab.json', f'{folder}/lab.json')} |")
+    if run.promote_or_noop(tax / "index.md", _markdown_bytes(root_lines), "taxonomy_index"):
+        changed += 1
+
+    for folder, records in labs.items():
+        lab = records[0]["lab"]
+        lab_lines = [
+            f"# {lab}",
+            "",
+            f"[LLM taxonomy](../index.md) · {_md_link('lab.json', 'lab.json')}",
+            "",
+            "| Model | Budget | LiveBench Global Average | Lowest documented cost (USD / 1M output) | Sources |",
+            "| --- | --- | ---: | ---: | --- |",
+        ]
+        for rec in records:
+            model_dir = rec["model_folder"]
+            capability = rec.get("capability", {}).get("value")
+            cost = rec.get("cost", {}).get("amount") if rec.get("cost") else None
+            sources = " · ".join(filter(None, [
+                _md_link("model record", rec["whitepaper"]) if rec["whitepaper"] else "",
+                _md_link("LiveBench", rec["livebench_source"]),
+            ])) or "â€”"
+            lab_lines.append(
+                f"| {_md_link(rec['model'], f'{model_dir}/index.md')} · {_md_link('JSON', f'{model_dir}/model.json')} | "
+                f"{_md_cell(rec['budget'] or 'â€”')} | "
+                f"{_fmt_num(capability) if capability is not None else 'â€”'} | "
+                f"{_fmt_num(cost) if cost is not None else 'â€”'} | {sources} |")
+        if run.promote_or_noop(tax / folder / "index.md", _markdown_bytes(lab_lines), "taxonomy_index"):
+            changed += 1
+
+        for rec in records:
+            model_dir = tax / folder / rec["model_folder"]
+            doc = docs[(folder, rec["model_folder"])]
+            evidence = [_md_link("model.json", "model.json"), _md_link("LiveBench CSV", "livebench.csv")]
+            for filename, label in (("whitepaper.md", "whitepaper text"), ("whitepaper.pdf", "whitepaper PDF"), ("whitepaper.html", "whitepaper HTML"), ("lab.html", "lab pricing"), ("openrouter.html", "OpenRouter pricing")):
+                if (model_dir / filename).is_file():
+                    evidence.append(_md_link(label, filename))
+            lines = [
+                f"# {rec['model']}",
+                "",
+                f"[LLM taxonomy](../../index.md) · [{_md_cell(rec['lab'])}](../index.md)",
+                "",
+                "| Field | Value |",
+                "| --- | --- |",
+                f"| Lab | {_md_link(rec['lab'], '../index.md')} |",
+                f"| Budget | {_md_cell(rec['budget'] or 'â€”')} |",
+                f"| Model record / whitepaper | {_md_link('source', rec['whitepaper'])} |",
+                f"| LiveBench snapshot | {_md_link('source', rec['livebench_source'])} |",
+                f"| Local records | {' · '.join(evidence)} |",
+                "",
+                "## Benchmarks",
+                "",
+                "| Benchmark | Value | Sources |",
+                "| --- | ---: | --- |",
+            ]
+            for benchmark in doc.get("benchmarks", []):
+                lines.append(
+                    f"| {_md_cell(benchmark.get('name', 'â€”'))} | "
+                    f"{_fmt_num(benchmark['value']) if benchmark.get('value') is not None else 'â€”'} | "
+                    f"{_md_links(benchmark.get('citations'))} |")
+            lines.extend(["", "## Rates", "", "| Rate | USD per 1M generated tokens | Sources |", "| --- | ---: | --- |"])
+            for rate in doc.get("rates", []):
+                lines.append(
+                    f"| {_md_cell(rate.get('name', 'â€”'))} | "
+                    f"{_fmt_num(rate['amount']) if rate.get('amount') is not None else 'â€”'} | "
+                    f"{_md_links(rate.get('citations'))} |")
+            if run.promote_or_noop(model_dir / "index.md", _markdown_bytes(lines), "taxonomy_index"):
+                changed += 1
+    total = 1 + len(labs) + len(run.models)
+    return f"{changed}/{total} taxonomy index.md file(s) rewritten ({total - changed} unchanged)"
+
+
+# ---------------------------------------------------------------------------
+# Stage 8: pareto frontier + render (deterministic, timestamp-free)
 # ---------------------------------------------------------------------------
 def _nice_ticks_linear(lo: float, hi: float) -> list[float]:
     if hi <= lo:
@@ -1599,7 +1729,7 @@ def stage_frontier_render(run: Run) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Stage 8: capability-cost svg chart (deterministic, timestamp-free)
+# Stage 9: capability-cost svg chart (deterministic, timestamp-free)
 # ---------------------------------------------------------------------------
 def _render_capability_cost_svg(points: list[dict]) -> str:
     """Ranked cost/capability scatter with a ROC-style envelope.
@@ -2001,7 +2131,7 @@ def stage_capability_cost_chart(run: Run) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Stage 9: report (checkpoint; also re-run best-effort on failure/interrupt)
+# Stage 10: report (checkpoint; also re-run best-effort on failure/interrupt)
 # ---------------------------------------------------------------------------
 def _write_report(run: Run) -> None:
     if run.report_written:
@@ -2114,6 +2244,7 @@ def _run_stages(run: Run) -> None:
         "rollup": stage_rollup,
         "cost": stage_cost,
         "capability": stage_capability,
+        "taxonomy_index": stage_taxonomy_index,
         "frontier_render": stage_frontier_render,
         "capability_cost_chart": stage_capability_cost_chart,
         "report": stage_report,

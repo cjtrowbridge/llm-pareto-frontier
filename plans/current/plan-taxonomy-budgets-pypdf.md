@@ -199,6 +199,21 @@ $0.070/M. Cite the Qwen model record, NVIDIA's official Thor specification,
 and EIA's electricity table. This is an explicit source-backed calculation,
 not a claim of achieved throughput.
 
+### Taxonomy Markdown-index amendment (2026-09-30)
+
+Add a deterministic `taxonomy_index` material stage after cost and capability
+are computed. It writes a generated `index.md` at each taxonomy level: the
+taxonomy root lists labs; each lab lists its models; each model documents its
+own benchmark and rate tables. Use only existing CSV, `model.json`, and
+resolved benchmark data. Every level must link to its children and applicable
+primary sources: model-card/whitepaper and LiveBench sources from `models.csv`,
+plus per-benchmark and per-rate citations from `model.json`. Model and lab
+tables also link to their local JSON and parent index. Markdown must be
+deterministic, UTF-8/LF, byte-compared, atomically promoted, and never become
+an input or source of truth. Add `taxonomy/**/index.md` to the pipeline's
+allowed outputs and describe the stage in the executable contract. Keep all
+existing source files, chart geometry, and chart presentation unchanged.
+
 ## Canon (locked requirements)
 
 ### Canonical titles
