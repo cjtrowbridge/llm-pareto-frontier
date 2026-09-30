@@ -1,0 +1,8 @@
+# Host-declared pipeline requirements.
+# The framework's own dependencies come from agentic-pipelines/requirements.txt;
+# both files are installed by the bootstrap helper into the ignored
+# .agentic-pipelines/dependencies/ directory (never system Python).
+#
+# The pipeline is deterministic-only (no LLM stages). The `whitepaper_md`
+# stage imports pypdf to extract whitepaper.pdf text into whitepaper.md.
+pypdf==5.9.0

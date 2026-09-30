@@ -1,16 +1,53 @@
-lab,model,livebench_id,whitepaper,livebench_source
-DeepSeek,DeepSeek-V4-Pro,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/DeepSeek_V4.pdf,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
-DeepSeek,DeepSeek-V4-Flash,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/DeepSeek_V4.pdf,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
-DeepSeek,DeepSeek-V4.1-Flash-Max,deepseek-v4.1-flash-max,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/DeepSeek_V4.pdf,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
-Qwen / Alibaba,Qwen3.8-27B,,https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
-Qwen / Alibaba,Qwen3.8-Flash-Next,,https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
-Qwen / Alibaba,Qwen3.8-Max,,https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
-Z.ai / GLM,GLM-5.3,,https://arxiv.org/abs/2602.15763,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
-Z.ai / GLM,GLM-5.3-Flash,,https://arxiv.org/abs/2602.15763,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
-Anthropic,Claude Opus 5.5 Max Effort,claude-opus-5-5-max-effort,https://platform.claude.com/docs/en/resources/overview,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
-Anthropic,Claude Opus 5.5 xHigh Effort,claude-opus-5-5-xhigh-effort,https://platform.claude.com/docs/en/resources/overview,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
-Anthropic,Claude Fable 5.1 Max Effort,,https://platform.claude.com/docs/en/resources/overview,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
-OpenAI,GPT-6 Astra Max,gpt-6-astra-max,https://deploymentsafety.openai.com/gpt-6-astra/protocolqa-open-ended,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
-OpenAI,GPT-5.6 Sol Max,,https://deploymentsafety.openai.com/,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
-Google DeepMind,Gemini 3.1 Pro Preview High,,https://deepmind.google/models/model-cards/gemini-3-1-pro,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
-xAI / SpaceXAI,Grok 4.7 xHigh,grok-4.7-xhigh,https://x.ai/news/grok-4-7,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+lab,model_title,budget,livebench_id,whitepaper,livebench_source
+DeepSeek,DeepSeek-V4-Pro,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+DeepSeek,DeepSeek-V4-Flash,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+DeepSeek,DeepSeek-V4.1-Flash-Max,think-max,deepseek-v4.1-flash-max,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+Qwen,Qwen3.8-27B,,,https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+Qwen,Qwen3.8-Flash-Next,,,https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+Qwen,Qwen3.8-Max,,,https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+GLM,GLM-5.3,,,https://arxiv.org/abs/2602.15763,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+GLM,GLM-5.3-Flash,,,https://arxiv.org/abs/2602.15763,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+Anthropic,Claude Opus 5.5 Max Effort,effort-max,claude-opus-5-5-max-effort,https://platform.claude.com/docs/en/resources/overview,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+Anthropic,Claude Opus 5.5 xHigh Effort,effort-xhigh,claude-opus-5-5-xhigh-effort,https://platform.claude.com/docs/en/resources/overview,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+Anthropic,Claude Fable 5.1 Max Effort,effort-max,,https://platform.claude.com/docs/en/resources/overview,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+OpenAI,GPT-6 Astra Max,reasoning-effort-max,gpt-6-astra-max,https://deploymentsafety.openai.com/gpt-6-astra/protocolqa-open-ended,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+OpenAI,GPT-5.6 Sol Max,reasoning-effort-max,,https://deploymentsafety.openai.com/,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+Google DeepMind,Gemini 3.1 Pro Preview High,thinking-high,,https://deepmind.google/models/model-cards/gemini-3-1-pro,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+xAI,Grok 4.7 xHigh,effort-xhigh,grok-4.7-xhigh,https://x.ai/news/grok-4-7,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+OpenAI,GPT-5.2 High,reasoning-effort-high,gpt-5.2-2025-12-11-high,https://developers.openai.com/api/docs/models/gpt-5.2,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+OpenAI,GPT-5.2 Codex,,gpt-5.2-codex,https://developers.openai.com/api/docs/models/gpt-5.2-codex,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+OpenAI,GPT-5.4 xHigh,reasoning-effort-xhigh,gpt-5.4-xhigh,https://developers.openai.com/api/docs/models/gpt-5.4,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+OpenAI,GPT-5.4 Mini xHigh,reasoning-effort-xhigh,gpt-5.4-mini-xhigh,https://developers.openai.com/api/docs/models/gpt-5.4-mini,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+OpenAI,GPT-5.4 Nano xHigh,reasoning-effort-xhigh,gpt-5.4-nano-xhigh,https://developers.openai.com/api/docs/models/gpt-5.4-nano,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+OpenAI,GPT-5.5 xHigh,reasoning-effort-xhigh,gpt-5.5-xhigh,https://developers.openai.com/api/docs/models/gpt-5.5,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+OpenAI,GPT-5.6 Terra Max,reasoning-effort-max,gpt-5.6-terra-max,https://developers.openai.com/api/docs/models/gpt-5.6-terra,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+OpenAI,GPT-5.6 Luna Max,reasoning-effort-max,gpt-5.6-luna-max,https://developers.openai.com/api/docs/models/gpt-5.6-luna,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+OpenAI,GPT-6 Sol Max,reasoning-effort-max,gpt-6-sol-max,https://developers.openai.com/api/docs/models/gpt-6-sol,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+OpenAI,GPT-6 Luna Max,reasoning-effort-max,gpt-6-luna-max,https://developers.openai.com/api/docs/models/gpt-6-luna,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+Anthropic,Claude Opus 4.5 Thinking 64K High Effort,effort-high,claude-opus-4-5-20251101-thinking-64k-high-effort,https://platform.claude.com/docs/en/api/cli/beta/agents/versions/list,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+Anthropic,Claude Opus 4.6 Thinking Auto High Effort,effort-high,claude-opus-4-6-thinking-auto-high-effort,https://platform.claude.com/docs/en/api/cli/beta/agents/versions/list,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+Anthropic,Claude Opus 4.7 xHigh Effort,effort-xhigh,claude-opus-4-7-xhigh-effort,https://platform.claude.com/docs/en/api/cli/beta/agents/versions/list,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+Anthropic,Claude Opus 4.8 Max Effort,effort-max,claude-opus-4-8-max-effort,https://platform.claude.com/docs/en/api/cli/beta/agents/versions/list,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+Anthropic,Claude Opus 5 Max Effort,effort-max,claude-opus-5-max-effort,https://platform.claude.com/docs/en/api/cli/beta/agents/versions/list,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+Anthropic,Claude Sonnet 4.6 Thinking Auto Medium Effort,effort-medium,claude-sonnet-4-6-thinking-auto-medium-effort,https://platform.claude.com/docs/en/api/cli/beta/agents/versions/list,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+Anthropic,Claude Sonnet 5 xHigh Effort,effort-xhigh,claude-sonnet-5-xhigh-effort,https://platform.claude.com/docs/en/api/cli/beta/agents/versions/list,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+Anthropic,Claude Sonnet 5.5 Max Effort,effort-max,claude-sonnet-5-5-max-effort,https://platform.claude.com/docs/en/models/opus-5-5/migration-guide,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+Anthropic,Claude Sonnet 5.5 xHigh Effort,effort-xhigh,claude-sonnet-5-5-xhigh-effort,https://platform.claude.com/docs/en/models/opus-5-5/migration-guide,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+GLM,GLM-5.2,,glm-5.2,https://huggingface.co/zai-org/GLM-5.2,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+NVIDIA,Nemotron-3-Ultra-550B-A55B,,nemotron-3-ultra-550b-a55b,https://build.nvidia.com/nvidia/nemotron-3-ultra-550b-a55b/modelcard,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+Google DeepMind,Gemini 3.5 Flash High,thinking-high,gemini-3.5-flash-high,https://ai.google.dev/gemini-api/docs/deprecations,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+Google DeepMind,Gemini 3.5 Flash-Lite High,thinking-high,gemini-3.5-flash-lite-high,https://ai.google.dev/gemini-api/docs/deprecations,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+Google DeepMind,Gemini 3.6 Flash High,thinking-high,gemini-3.6-flash-high,https://ai.google.dev/gemini-api/docs/deprecations,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+Google DeepMind,Gemini 3.7 Flash High,thinking-high,gemini-3.7-flash-high,https://ai.google.dev/gemini-api/docs/deprecations,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+Google DeepMind,Gemini 3.8 Flash High,thinking-high,gemini-3.8-flash-high,https://ai.google.dev/gemini-api/docs/deprecations,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+xAI,Grok 4.3,,grok-4.3,https://docs.x.ai/developers/release-notes,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+xAI,Grok 4.5,,grok-4.5,https://docs.x.ai/developers/release-notes,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+xAI,Grok 4.6,,grok-4.6,https://docs.x.ai/developers/release-notes,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+xAI,Grok Build 0.1,,grok-build-0.1,https://docs.x.ai/developers/release-notes,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+Moonshot AI,Kimi K2.6 Thinking,,kimi-k2.6-thinking,https://huggingface.co/moonshotai/Kimi-K2.6,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+Moonshot AI,Kimi K2.7 Code,,kimi-k2.7-code,https://huggingface.co/moonshotai/Kimi-K2.7-Code,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+Moonshot AI,Kimi K3,,kimi-k3,https://huggingface.co/moonshotai/Kimi-K3,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+MiniMax,MiniMax M3,,minimax-m3,https://platform.minimax.io/subscribe/token-plan?tab=api-enterprise,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+DeepSeek,DeepSeek-V4-Flash-0731,,deepseek-v4-flash-0731,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+DeepSeek,DeepSeek-V4-Flash-Vision-Exp,,deepseek-v4-flash-vision-exp,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv
+DeepSeek,DeepSeek-V4-Pro-0813,,deepseek-v4-pro-0813,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813,https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv

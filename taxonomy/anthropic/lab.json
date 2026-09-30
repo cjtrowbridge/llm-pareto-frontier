@@ -1,0 +1,2234 @@
+{
+  "lab": "Anthropic",
+  "models": [
+    {
+      "lab": "Anthropic",
+      "model": "Claude Opus 5.5 Max Effort",
+      "budget": "effort-max",
+      "benchmarks": [
+        {
+          "name": "livebench",
+          "value": 83.21657142857143,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-amps-hard",
+          "value": 98.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-code-completion",
+          "value": 86.957,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-code-generation",
+          "value": 91.549,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-connections",
+          "value": 99.333,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-consecutive-events",
+          "value": 90.555,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-integrals-with-game",
+          "value": 100.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-javascript",
+          "value": 81.818,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-logic-with-navigation",
+          "value": 86.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-math-comp",
+          "value": 97.059,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-olympiad",
+          "value": 93.251,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-paraphrase",
+          "value": 64.267,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-plot-unscrambling",
+          "value": 77.477,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-python",
+          "value": 70.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-simplify",
+          "value": 58.667,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-spatial",
+          "value": 98.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-story-generation",
+          "value": 70.917,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-summarize",
+          "value": 69.1,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-tablejoin",
+          "value": 52.327,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-tablereformat",
+          "value": 98.039,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-theory-of-mind",
+          "value": 84.615,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-typescript",
+          "value": 63.333,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-typos",
+          "value": 82.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-zebra-puzzle",
+          "value": 100.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        }
+      ],
+      "rates": [
+        {
+          "name": "openrouter_per_million_generated_tokens",
+          "amount": 20.0,
+          "citations": [
+            "https://openrouter.ai/anthropic/claude-opus-5.5"
+          ]
+        },
+        {
+          "name": "lab_per_million_generated_tokens",
+          "amount": 20.0,
+          "citations": [
+            "https://www.anthropic.com/claude/opus"
+          ]
+        }
+      ]
+    },
+    {
+      "lab": "Anthropic",
+      "model": "Claude Opus 5.5 xHigh Effort",
+      "budget": "effort-xhigh",
+      "benchmarks": [
+        {
+          "name": "livebench",
+          "value": 82.05921428571428,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-amps-hard",
+          "value": 99.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-code-completion",
+          "value": 86.957,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-code-generation",
+          "value": 91.549,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-connections",
+          "value": 99.333,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-consecutive-events",
+          "value": 90.37,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-integrals-with-game",
+          "value": 99.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-javascript",
+          "value": 72.727,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-logic-with-navigation",
+          "value": 80.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-math-comp",
+          "value": 97.059,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-olympiad",
+          "value": 92.153,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-paraphrase",
+          "value": 64.683,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-plot-unscrambling",
+          "value": 77.163,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-python",
+          "value": 70.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-simplify",
+          "value": 63.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-spatial",
+          "value": 98.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-story-generation",
+          "value": 71.183,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-summarize",
+          "value": 69.333,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-tablejoin",
+          "value": 51.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-tablereformat",
+          "value": 98.039,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-theory-of-mind",
+          "value": 84.615,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-typescript",
+          "value": 53.333,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-typos",
+          "value": 80.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-zebra-puzzle",
+          "value": 100.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        }
+      ],
+      "rates": [
+        {
+          "name": "openrouter_per_million_generated_tokens",
+          "amount": 20.0,
+          "citations": [
+            "https://openrouter.ai/anthropic/claude-opus-5.5"
+          ]
+        },
+        {
+          "name": "lab_per_million_generated_tokens",
+          "amount": 20.0,
+          "citations": [
+            "https://www.anthropic.com/claude/opus"
+          ]
+        }
+      ]
+    },
+    {
+      "lab": "Anthropic",
+      "model": "Claude Fable 5.1 Max Effort",
+      "budget": "effort-max",
+      "benchmarks": [
+        {
+          "name": "livebench",
+          "value": 83.41415476190477,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-amps-hard",
+          "value": 99.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-code-completion",
+          "value": 82.609,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-code-generation",
+          "value": 90.141,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-connections",
+          "value": 99.333,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-consecutive-events",
+          "value": 90.555,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-integrals-with-game",
+          "value": 99.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-javascript",
+          "value": 68.182,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-logic-with-navigation",
+          "value": 86.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-math-comp",
+          "value": 97.059,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-olympiad",
+          "value": 92.968,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-paraphrase",
+          "value": 71.517,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-plot-unscrambling",
+          "value": 75.17,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-python",
+          "value": 70.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-simplify",
+          "value": 70.167,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-spatial",
+          "value": 100.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-story-generation",
+          "value": 78.1,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-summarize",
+          "value": 72.167,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-tablejoin",
+          "value": 56.154,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-tablereformat",
+          "value": 94.118,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-theory-of-mind",
+          "value": 80.769,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-typescript",
+          "value": 60.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-typos",
+          "value": 94.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-zebra-puzzle",
+          "value": 100.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        }
+      ],
+      "rates": [
+        {
+          "name": "openrouter_per_million_generated_tokens",
+          "amount": 50.0,
+          "citations": [
+            "https://openrouter.ai/anthropic/claude-fable-5.1"
+          ]
+        },
+        {
+          "name": "lab_per_million_generated_tokens",
+          "amount": 50.0,
+          "citations": [
+            "https://platform.claude.com/docs/en/models/fable-5-1/overview"
+          ]
+        }
+      ]
+    },
+    {
+      "lab": "Anthropic",
+      "model": "Claude Opus 4.5 Thinking 64K High Effort",
+      "budget": "effort-high",
+      "benchmarks": [
+        {
+          "name": "livebench",
+          "value": 72.58216666666667,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-amps-hard",
+          "value": 99.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-code-completion",
+          "value": 80.435,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-code-generation",
+          "value": 78.873,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-connections",
+          "value": 99.333,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-consecutive-events",
+          "value": 79.363,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-integrals-with-game",
+          "value": 78.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-javascript",
+          "value": 59.091,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-logic-with-navigation",
+          "value": 68.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-math-comp",
+          "value": 95.098,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-olympiad",
+          "value": 89.458,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-paraphrase",
+          "value": 65.667,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-plot-unscrambling",
+          "value": 66.45,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-python",
+          "value": 40.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-simplify",
+          "value": 54.95,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-spatial",
+          "value": 96.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-story-generation",
+          "value": 65.85,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-summarize",
+          "value": 63.717,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-tablejoin",
+          "value": 45.923,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-tablereformat",
+          "value": 98.039,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-theory-of-mind",
+          "value": 78.846,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-typescript",
+          "value": 20.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-typos",
+          "value": 78.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-zebra-puzzle",
+          "value": 77.5,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        }
+      ],
+      "rates": [
+        {
+          "name": "lab_per_million_generated_tokens",
+          "amount": 25.0,
+          "citations": [
+            "https://platform.claude.com/docs/en/models/opus-4-5/overview"
+          ]
+        }
+      ]
+    },
+    {
+      "lab": "Anthropic",
+      "model": "Claude Opus 4.6 Thinking Auto High Effort",
+      "budget": "effort-high",
+      "benchmarks": [
+        {
+          "name": "livebench",
+          "value": 74.51990476190475,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-amps-hard",
+          "value": 97.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-code-completion",
+          "value": 76.087,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-code-generation",
+          "value": 80.282,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-connections",
+          "value": 99.333,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-consecutive-events",
+          "value": 63.467,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-integrals-with-game",
+          "value": 73.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-javascript",
+          "value": 63.636,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-logic-with-navigation",
+          "value": 80.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-math-comp",
+          "value": 95.098,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-olympiad",
+          "value": 92.17,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-paraphrase",
+          "value": 62.817,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-plot-unscrambling",
+          "value": 66.476,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-python",
+          "value": 50.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-simplify",
+          "value": 59.15,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-spatial",
+          "value": 98.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-story-generation",
+          "value": 66.133,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-summarize",
+          "value": 65.15,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-tablejoin",
+          "value": 48.173,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-tablereformat",
+          "value": 98.039,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-theory-of-mind",
+          "value": 82.692,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-typescript",
+          "value": 33.333,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-typos",
+          "value": 84.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-zebra-puzzle",
+          "value": 94.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        }
+      ],
+      "rates": [
+        {
+          "name": "lab_per_million_generated_tokens",
+          "amount": 25.0,
+          "citations": [
+            "https://platform.claude.com/docs/en/models/opus-4-6/overview"
+          ]
+        }
+      ]
+    },
+    {
+      "lab": "Anthropic",
+      "model": "Claude Opus 4.7 xHigh Effort",
+      "budget": "effort-xhigh",
+      "benchmarks": [
+        {
+          "name": "livebench",
+          "value": 76.52935714285715,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-amps-hard",
+          "value": 98.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-code-completion",
+          "value": 78.261,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-code-generation",
+          "value": 85.915,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-connections",
+          "value": 92.333,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-consecutive-events",
+          "value": 89.521,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-integrals-with-game",
+          "value": 84.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-javascript",
+          "value": 63.636,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-logic-with-navigation",
+          "value": 70.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-math-comp",
+          "value": 98.039,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-olympiad",
+          "value": 91.376,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-paraphrase",
+          "value": 65.767,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-plot-unscrambling",
+          "value": 61.409,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-python",
+          "value": 45.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-simplify",
+          "value": 65.5,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-spatial",
+          "value": 100.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-story-generation",
+          "value": 69.4,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-summarize",
+          "value": 66.283,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-tablejoin",
+          "value": 47.231,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-tablereformat",
+          "value": 98.039,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-theory-of-mind",
+          "value": 80.769,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-typescript",
+          "value": 43.333,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-typos",
+          "value": 80.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-zebra-puzzle",
+          "value": 98.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        }
+      ],
+      "rates": [
+        {
+          "name": "lab_per_million_generated_tokens",
+          "amount": 25.0,
+          "citations": [
+            "https://platform.claude.com/docs/en/about-claude/pricing"
+          ]
+        }
+      ]
+    },
+    {
+      "lab": "Anthropic",
+      "model": "Claude Opus 4.8 Max Effort",
+      "budget": "effort-max",
+      "benchmarks": [
+        {
+          "name": "livebench",
+          "value": 76.22398809523808,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-amps-hard",
+          "value": 98.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-code-completion",
+          "value": 84.783,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-code-generation",
+          "value": 78.873,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-connections",
+          "value": 99.333,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-consecutive-events",
+          "value": 52.905,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-integrals-with-game",
+          "value": 89.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-javascript",
+          "value": 68.182,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-logic-with-navigation",
+          "value": 78.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-math-comp",
+          "value": 98.039,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-olympiad",
+          "value": 92.227,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-paraphrase",
+          "value": 67.867,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-plot-unscrambling",
+          "value": 61.645,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-python",
+          "value": 50.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-simplify",
+          "value": 62.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-spatial",
+          "value": 98.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-story-generation",
+          "value": 80.6,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-summarize",
+          "value": 77.667,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-tablejoin",
+          "value": 51.077,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-tablereformat",
+          "value": 94.118,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-theory-of-mind",
+          "value": 80.769,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-typescript",
+          "value": 33.333,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-typos",
+          "value": 78.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-zebra-puzzle",
+          "value": 100.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        }
+      ],
+      "rates": [
+        {
+          "name": "lab_per_million_generated_tokens",
+          "amount": 25.0,
+          "citations": [
+            "https://platform.claude.com/docs/en/models/opus-4-8/overview"
+          ]
+        }
+      ]
+    },
+    {
+      "lab": "Anthropic",
+      "model": "Claude Opus 5 Max Effort",
+      "budget": "effort-max",
+      "benchmarks": [
+        {
+          "name": "livebench",
+          "value": 80.08497619047618,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-amps-hard",
+          "value": 99.01,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-code-completion",
+          "value": 82.609,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-code-generation",
+          "value": 80.282,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-connections",
+          "value": 99.333,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-consecutive-events",
+          "value": 77.571,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-integrals-with-game",
+          "value": 97.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-javascript",
+          "value": 77.273,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-logic-with-navigation",
+          "value": 86.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-math-comp",
+          "value": 94.118,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-olympiad",
+          "value": 92.796,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-paraphrase",
+          "value": 65.733,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-plot-unscrambling",
+          "value": 74.731,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-python",
+          "value": 75.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-simplify",
+          "value": 61.583,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-spatial",
+          "value": 100.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-story-generation",
+          "value": 61.317,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-summarize",
+          "value": 66.433,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-tablejoin",
+          "value": 51.962,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-tablereformat",
+          "value": 94.118,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-theory-of-mind",
+          "value": 78.846,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-typescript",
+          "value": 43.333,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-typos",
+          "value": 92.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-zebra-puzzle",
+          "value": 100.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        }
+      ],
+      "rates": [
+        {
+          "name": "lab_per_million_generated_tokens",
+          "amount": 25.0,
+          "citations": [
+            "https://platform.claude.com/docs/en/models/opus-5/overview"
+          ]
+        }
+      ]
+    },
+    {
+      "lab": "Anthropic",
+      "model": "Claude Sonnet 4.6 Thinking Auto Medium Effort",
+      "budget": "effort-medium",
+      "benchmarks": [
+        {
+          "name": "livebench",
+          "value": 72.9900238095238,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-amps-hard",
+          "value": 76.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-code-completion",
+          "value": 78.261,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-code-generation",
+          "value": 80.282,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-connections",
+          "value": 99.333,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-consecutive-events",
+          "value": 92.683,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-integrals-with-game",
+          "value": 90.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-javascript",
+          "value": 54.545,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-logic-with-navigation",
+          "value": 70.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-math-comp",
+          "value": 94.118,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-olympiad",
+          "value": 87.858,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-paraphrase",
+          "value": 59.4,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-plot-unscrambling",
+          "value": 56.975,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-python",
+          "value": 50.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-simplify",
+          "value": 62.933,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-spatial",
+          "value": 100.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-story-generation",
+          "value": 68.9,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-summarize",
+          "value": 61.65,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-tablejoin",
+          "value": 45.077,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-tablereformat",
+          "value": 96.078,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-theory-of-mind",
+          "value": 73.077,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-typescript",
+          "value": 23.333,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-typos",
+          "value": 72.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-zebra-puzzle",
+          "value": 96.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        }
+      ],
+      "rates": [
+        {
+          "name": "lab_per_million_generated_tokens",
+          "amount": 15.0,
+          "citations": [
+            "https://platform.claude.com/docs/en/models/sonnet-4-6/overview"
+          ]
+        }
+      ]
+    },
+    {
+      "lab": "Anthropic",
+      "model": "Claude Sonnet 5 xHigh Effort",
+      "budget": "effort-xhigh",
+      "benchmarks": [
+        {
+          "name": "livebench",
+          "value": 76.03971428571428,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-amps-hard",
+          "value": 98.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-code-completion",
+          "value": 78.261,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-code-generation",
+          "value": 83.099,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-connections",
+          "value": 95.5,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-consecutive-events",
+          "value": 74.741,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-integrals-with-game",
+          "value": 88.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-javascript",
+          "value": 68.182,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-logic-with-navigation",
+          "value": 86.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-math-comp",
+          "value": 95.098,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-olympiad",
+          "value": 90.671,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-paraphrase",
+          "value": 61.25,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-plot-unscrambling",
+          "value": 53.411,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-python",
+          "value": 60.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-simplify",
+          "value": 60.65,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-spatial",
+          "value": 100.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-story-generation",
+          "value": 62.317,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-summarize",
+          "value": 71.217,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-tablejoin",
+          "value": 42.442,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-tablereformat",
+          "value": 98.039,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-theory-of-mind",
+          "value": 80.769,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-typescript",
+          "value": 50.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-typos",
+          "value": 76.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-zebra-puzzle",
+          "value": 88.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        }
+      ],
+      "rates": [
+        {
+          "name": "lab_per_million_generated_tokens",
+          "amount": 10.0,
+          "citations": [
+            "https://platform.claude.com/docs/en/models/sonnet-5/overview"
+          ]
+        }
+      ]
+    },
+    {
+      "lab": "Anthropic",
+      "model": "Claude Sonnet 5.5 Max Effort",
+      "budget": "effort-max",
+      "benchmarks": [
+        {
+          "name": "livebench",
+          "value": 75.67214285714286,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-amps-hard",
+          "value": 98.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-code-completion",
+          "value": 86.957,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-code-generation",
+          "value": 95.775,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-connections",
+          "value": 99.333,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-consecutive-events",
+          "value": 40.616,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-integrals-with-game",
+          "value": 97.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-javascript",
+          "value": 77.273,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-logic-with-navigation",
+          "value": 82.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-math-comp",
+          "value": 97.059,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-olympiad",
+          "value": 92.468,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-paraphrase",
+          "value": 48.217,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-plot-unscrambling",
+          "value": 48.619,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-python",
+          "value": 35.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-simplify",
+          "value": 50.85,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-spatial",
+          "value": 98.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-story-generation",
+          "value": 69.917,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-summarize",
+          "value": 58.167,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-tablejoin",
+          "value": 39.808,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-tablereformat",
+          "value": 98.039,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-theory-of-mind",
+          "value": 86.538,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-typescript",
+          "value": 56.667,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-typos",
+          "value": 86.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-zebra-puzzle",
+          "value": 100.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        }
+      ],
+      "rates": [
+        {
+          "name": "lab_per_million_generated_tokens",
+          "amount": 10.0,
+          "citations": [
+            "https://platform.claude.com/docs/en/models/sonnet-5-5/overview"
+          ]
+        }
+      ]
+    },
+    {
+      "lab": "Anthropic",
+      "model": "Claude Sonnet 5.5 xHigh Effort",
+      "budget": "effort-xhigh",
+      "benchmarks": [
+        {
+          "name": "livebench",
+          "value": 77.75469047619048,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-amps-hard",
+          "value": 98.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-code-completion",
+          "value": 84.783,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-code-generation",
+          "value": 92.958,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-connections",
+          "value": 98.5,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-consecutive-events",
+          "value": 90.936,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-integrals-with-game",
+          "value": 100.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-javascript",
+          "value": 36.364,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-logic-with-navigation",
+          "value": 80.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-math-comp",
+          "value": 97.059,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-olympiad",
+          "value": 91.72,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-paraphrase",
+          "value": 62.283,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-plot-unscrambling",
+          "value": 67.789,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-python",
+          "value": 35.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-simplify",
+          "value": 72.367,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-spatial",
+          "value": 98.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-story-generation",
+          "value": 77.083,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-summarize",
+          "value": 70.333,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-tablejoin",
+          "value": 46.885,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-tablereformat",
+          "value": 98.039,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-theory-of-mind",
+          "value": 69.231,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-typescript",
+          "value": 46.667,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-typos",
+          "value": 84.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        },
+        {
+          "name": "livebench-zebra-puzzle",
+          "value": 100.0,
+          "citations": [
+            "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+          ]
+        }
+      ],
+      "rates": [
+        {
+          "name": "lab_per_million_generated_tokens",
+          "amount": 10.0,
+          "citations": [
+            "https://platform.claude.com/docs/en/models/sonnet-5-5/overview"
+          ]
+        }
+      ]
+    }
+  ]
+}

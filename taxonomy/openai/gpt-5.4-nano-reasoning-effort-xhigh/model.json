@@ -1,0 +1,184 @@
+{
+  "lab": "OpenAI",
+  "model": "GPT-5.4 Nano xHigh",
+  "budget": "reasoning-effort-xhigh",
+  "benchmarks": [
+    {
+      "name": "livebench",
+      "value": 69.57636904761905,
+      "citations": [
+        "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+      ]
+    },
+    {
+      "name": "livebench-amps-hard",
+      "value": 98.0,
+      "citations": [
+        "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+      ]
+    },
+    {
+      "name": "livebench-code-completion",
+      "value": 67.391,
+      "citations": [
+        "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+      ]
+    },
+    {
+      "name": "livebench-code-generation",
+      "value": 74.286,
+      "citations": [
+        "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+      ]
+    },
+    {
+      "name": "livebench-connections",
+      "value": 94.388,
+      "citations": [
+        "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+      ]
+    },
+    {
+      "name": "livebench-consecutive-events",
+      "value": 54.301,
+      "citations": [
+        "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+      ]
+    },
+    {
+      "name": "livebench-integrals-with-game",
+      "value": 82.828,
+      "citations": [
+        "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+      ]
+    },
+    {
+      "name": "livebench-javascript",
+      "value": 63.636,
+      "citations": [
+        "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+      ]
+    },
+    {
+      "name": "livebench-logic-with-navigation",
+      "value": 64.0,
+      "citations": [
+        "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+      ]
+    },
+    {
+      "name": "livebench-math-comp",
+      "value": 95.098,
+      "citations": [
+        "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+      ]
+    },
+    {
+      "name": "livebench-olympiad",
+      "value": 87.982,
+      "citations": [
+        "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+      ]
+    },
+    {
+      "name": "livebench-paraphrase",
+      "value": 66.649,
+      "citations": [
+        "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+      ]
+    },
+    {
+      "name": "livebench-plot-unscrambling",
+      "value": 39.133,
+      "citations": [
+        "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+      ]
+    },
+    {
+      "name": "livebench-python",
+      "value": 50.0,
+      "citations": [
+        "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+      ]
+    },
+    {
+      "name": "livebench-simplify",
+      "value": 62.75,
+      "citations": [
+        "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+      ]
+    },
+    {
+      "name": "livebench-spatial",
+      "value": 82.0,
+      "citations": [
+        "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+      ]
+    },
+    {
+      "name": "livebench-story-generation",
+      "value": 67.653,
+      "citations": [
+        "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+      ]
+    },
+    {
+      "name": "livebench-summarize",
+      "value": 71.767,
+      "citations": [
+        "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+      ]
+    },
+    {
+      "name": "livebench-tablejoin",
+      "value": 50.588,
+      "citations": [
+        "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+      ]
+    },
+    {
+      "name": "livebench-tablereformat",
+      "value": 98.039,
+      "citations": [
+        "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+      ]
+    },
+    {
+      "name": "livebench-theory-of-mind",
+      "value": 80.769,
+      "citations": [
+        "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+      ]
+    },
+    {
+      "name": "livebench-typescript",
+      "value": 26.667,
+      "citations": [
+        "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+      ]
+    },
+    {
+      "name": "livebench-typos",
+      "value": 54.0,
+      "citations": [
+        "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+      ]
+    },
+    {
+      "name": "livebench-zebra-puzzle",
+      "value": 97.619,
+      "citations": [
+        "https://github.com/LiveBench/new-livebench/blob/main/public/table_2026_06_25.csv"
+      ]
+    }
+  ],
+  "rates": [
+    {
+      "name": "lab_per_million_generated_tokens",
+      "amount": 1.25,
+      "citations": [
+        "https://developers.openai.com/api/docs/models/gpt-5.4-nano"
+      ]
+    }
+  ]
+}

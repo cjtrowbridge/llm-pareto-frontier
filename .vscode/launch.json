@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Pareto Pipeline: Main",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "bash \"${workspaceFolder}/scripts/bootstrap.ps1\"",
+      "windows": {
+        "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"${workspaceFolder}\\scripts\\bootstrap.ps1\""
+      },
+      "cwd": "${workspaceFolder}",
+      "presentation": {
+        "group": "pipeline",
+        "order": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+# Local pipeline configuration and runtime evidence
+api.yaml
+.agentic-pipelines/
+state/
+runs/
+threads/
+artifacts/
+failures/
+reports/
+*.rejected.md
+*.rejected.json
+*.rejected.txt
+*.rejected.*
+
+# Python tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
